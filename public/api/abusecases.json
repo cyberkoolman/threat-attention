@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "scenario": "A attacker with credentials to an account can use the account activity information to track a user's real identity.",
+      "tags": ["Identity"],
+      "riskScore": "High",
+      "mitigation": "WIP"
+    },
+    {
+      "id": "2",
+      "scenario": "An attacker can spoof his location/device to mimic a user.",
+      "tags": ["Spoof", "Location"], 
+      "riskScore": "Low",
+      "mitigation": "Done"
+    },
+    {
+      "id": "3",
+      "scenario": "An attacker with credentials could prove usage of a vpn.",
+      "tags": ["VPN"], 
+      "riskScore": "Low",
+      "mitigation": "Research"
+    },
+    {
+      "id": "4",
+      "scenario": "An attacker who compromises an account activity source like apps.jw could inject false info and hide unauthorized access.",
+      "tags": ["Access"], 
+      "riskScore": "Moderate",
+      "mitigation": "Research"
+    },
+    {
+      "id": "5",
+      "scenario": "An attacker with stolen credentials could login and logout a lot to bury a significant logged event such an email change.",
+      "tags": ["Email"], 
+      "riskScore": "Low",
+      "mitigation": "Done"
+    },
+    {
+      "id": "6",
+      "scenario": "An attacker can use the forgot password feature to gain access to an account and learn information about a user.",
+      "tags": ["Password Recovery"], 
+      "riskScore": "Low",
+      "mitigation": "WIP"
+    },
+    {
+      "id": "7",
+      "scenario": "An attacker sends a regex bomb in the user-agent header to consume processing on the server.",
+      "tags": ["Regex"], 
+      "riskScore": "Moderate",
+      "mitigation": "WIP"
+    }
+  ]

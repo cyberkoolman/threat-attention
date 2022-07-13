@@ -1,0 +1,53 @@
+[
+    {
+        "id": "1",
+        "name": "Threat Assessment: Identity app",
+        "created": "03/11/2022 1:01 PM EST",
+        "updated": "03/14/2022 5:23 PM EST",
+        "author": "Joe Smith",
+        "contacts": ["@SShin", "@Ccurrens", "@Bhbarnes"],
+        "desc": "Scope is limited to the SPA running in the browser and receiving strings from the translation service",
+        "snaprisk": "",
+        "dataflowurl": "/assets/dataflow1.jpg",
+        "usecases": "",
+        "whatwrongs": "",
+        "abusecases": [1,3,5,7],
+        "mitigations": [2,4],
+        "status": "Submitted",
+        "tags": ["Identity", "SPA"]
+    },
+    {
+        "id": "2",
+        "name": "Threat Assessment: Translation String",
+        "created": "04/05/2022 10:31 AM EST",
+        "updated": "04/09/2022 2:23 PM EST",
+        "author": "Ben Barnes",
+        "contacts": ["Lee, Sung-hee", "Steelman, Joshua", "Zarbrook, Derek", "Brown, Jeff"],
+        "desc": "Translation strings are pulled in at run-time on CDH instead of at build time",
+        "snaprisk": "",
+        "dataflowurl": "/assets/dataflow2.png",
+        "usecases": "We need to translate the SPA into many languages, using existing functionality in CDH (run-time)",
+        "whatwrongs": "",
+        "abusecases": [2,4,5,6],
+        "mitigations": [1,2],
+        "status": "In Review",
+        "tags": ["Language", "CDH", "SPA"]
+    },
+    {
+        "id": "3",
+        "name": "Threat Assessment: Convention Information - Person lookup by JWPub username",
+        "created": "05/01/2022 08:31 AM EST",
+        "updated": "05/03/2022 12:29 PM EST",
+        "author": "Placide, Julie-Améline",
+        "contacts": ["Ben Barnes", "Randy Park", "@SShin"],
+        "desc": "This is to examine more specifically the risk of allowing convention committee members to lookup persons by JWPub username",
+        "snaprisk": "cdh/apps/convention-information",
+        "dataflowurl": "/assets/dataflow3.jpg",
+        "usecases": "Convention Committee Member enters the JWPub username to lookup the record of the already-appointed person",
+        "whatwrongs": "Grant access to an unauthorized person to Convention domain, event media, etc (not specific to JWPub username).",
+        "abusecases": [3,5,6,7],
+        "mitigations": [3,4],
+        "status": "Archived",
+        "tags": ["Convention", "JWPub"]
+    }
+]

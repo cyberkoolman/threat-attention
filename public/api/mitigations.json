@@ -1,0 +1,26 @@
+[
+    {
+      "id": "1",
+      "mitigation": "Switch to purely hosted pages for the payment pages.",
+      "tags": ["Payment"],
+      "status": "WIP"
+    },
+    {
+      "id": "2",
+      "mitigation": "Input validation of the strings before displaying in the SPA (Angular template escaping; domSanitizer).",
+      "tags": ["Angular", "Validation"], 
+      "status": "Done"
+    },
+    {
+      "id": "3",
+      "mitigation": "Ensure anchors are only for our hosted domain (Verification code by the client).",
+      "tags": ["Anchors"], 
+      "status": "Research"
+    },
+    {
+        "id": "4",
+        "mitigation": "Content security policy for donate specifically.",
+        "tags": ["Policy"], 
+        "status": "Research"
+    }
+]
